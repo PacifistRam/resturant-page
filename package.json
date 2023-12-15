@@ -1,0 +1,19 @@
+{
+  "name": "resturant-page",
+  "version": "1.0.0",
+  "description": "Resturant page project as an assignment for webpack course section created for The odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "resturant-page"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}
