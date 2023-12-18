@@ -22,4 +22,5 @@ const CreateNavbar = () => {
     return navbar;
 };
 const navbar = CreateNavbar();
+export default CreateNavbar();
 export {navbar};
