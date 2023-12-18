@@ -11,6 +11,7 @@ const paragraph = CreatePara("Explores the art of mindful eating, encouraging re
 
 const CreateHomePage = () => {
     const mainContainer = document.createElement('div')
+    mainContainer.classList.add('main-container')
     //--------Main image---------------
     const image = document.createElement('img')
     image.classList.add('main-image');

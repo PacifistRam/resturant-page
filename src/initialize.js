@@ -34,6 +34,10 @@ const loadModule = ( () => {
         const menuLinks = document.querySelectorAll('li')
         menuLinks.forEach(item => {
             item.addEventListener('click', (e) => {
+                menuLinks.forEach(links => {
+                    links.classList.remove('visited')
+                })
+               item.classList.add('visited');
                 const clickedItem = e.target.textContent
                 if (clickedItem === 'HOME') {
                     loadHomePage();
