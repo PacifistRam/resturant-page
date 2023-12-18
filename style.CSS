@@ -1,8 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*,
+*::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-color: rgb(36,34,0); */
+    background: linear-gradient(0deg, rgba(36, 34, 0, 1) 0%, rgba(235, 219, 104, 1) 23%, rgba(240, 242, 242, 1) 100%);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* ------------//NAVBAR//--------// */
+.navigate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-block: 1rem;
+}
+
+.navigate>h1 {
+    font-size: 3.5rem;
+}
+
+.navigate ul {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.navigate ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+    transition: color 0.2s ease-in;
+}
+
+.navigate ul li:hover {
+    color: rgb(236, 154, 47);
+
+
+}
+
+.navigate li {
+    position: relative;
+}
+
+.navigate li.visited {
+    color: rgb(236, 154, 47);
+}
+
+.navigate li::after {
+    content: "";
+    display: block;
+    width: 0;
+    /* Start with zero width, the line will expand */
+    height: 1px;
+    /* Height of the line */
+    background-color: rgb(236, 154, 47);
+    position: absolute;
+    bottom: 0;
+    /* Position at the bottom of the link */
+    left: 0;
+    /* Align to the left */
+    transition: width 0.3s ease;
+    /* Add transition to the width of the line */
+}
+
+.navigate li.visited::after {
+    width: 100%;
+    /* Expand the line to full width when the link is visited */
+}
+
+/* --------main Container------ */
+.main-container, .about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
 .main-image {
-    width: 500px;
+    width: 100%;
     height: 500px;
     display: block;
     border-radius: 50%;
+}
+.main-para {
+    max-width: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: rgb(40, 44, 44);
 }
 
 
@@ -10,4 +110,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-  }
+    justify-content: center;
+    min-height: 100vh;
+}
+.menu-card {
+    width: 25%;
+    min-width: 250px;
+    
+}
+.menu-card > img {
+    display: block;
+    width: 100%;
+    
+}
